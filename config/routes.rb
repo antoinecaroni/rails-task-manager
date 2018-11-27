@@ -12,3 +12,4 @@ Rails.application.routes.draw do
 
   delete 'tasks/:id', to: 'tasks#destroy', as: :destroy
 end
+
