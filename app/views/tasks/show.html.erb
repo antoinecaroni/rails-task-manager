@@ -1,0 +1,23 @@
+<div class="container jumbotron">
+
+  <h1> Details </h1>
+
+  <h2> <%=@task.title%> </h2>
+
+  <hr>
+
+  <h2> <%=@task.details%> </h2>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" <%= @task.completed == true ? "checked" : "" %>>
+
+    <%= @task.completed == true ? "completed" : "not completed" %>
+  </div>
+
+
+  <hr>
+
+
+  <a class=" btn btn-success btn-lg" href="../tasks">Back to tasks</a>
+  <%=link_to("Edit Piaf", edit_url, class:"btn btn-primary btn-lg")%>
+</div>
